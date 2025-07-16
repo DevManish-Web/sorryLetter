@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  font-family: Poppins;
+}
+body{
+  background-color: #f0a037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sorry-box{
+  background-color: #ed6e52;
+  padding: 15px;
+  width: 50vw;
+  height: 50%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sorry-box h1{
+  font-size: 3.125rem;
+  text-align: center;
+}
+.sorry-box p{
+  font-size: 1.25rem;
+  text-align: center;
+}
+.sorry-box button{
+  background-color: #ed6e40;
+  padding: 15px;
+  border-radius: 30px;
+  border-width: 0;
+  border-color: #f0a037;
+  font-size: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition-duration: 0.2s;
+}
+.sorry-box button:hover{
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.bigBox{
+  height: fit-content;
+  width: fit-content;
+  padding:3% 5%;
+  border-radius: 30px;
+  background-color: #dadada;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: scale(0);
+}
+.bigBox p{
+  text-align: center;
+  font-size: 1.375rem;
+  /* color: #ED6E52; */
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .sorry-box{
+    width: 80vw;
+    height: 60%;
+    gap: 25px;
+  }
+  .sorry-box h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .bigBox{
+    margin: 1%;
+    padding: 3% 2%;
+  }
+  .bigBox p{
+    font-size: 1.25rem;
+  }
+}
